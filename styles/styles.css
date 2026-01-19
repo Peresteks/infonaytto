@@ -11,13 +11,6 @@ body {
       text-align: center;
     }
 
-    @font-face {
-  font-family: "Nunito";
-  font-style: NORMAL; /* See note below */
-  font-weight: 200 900; /* See note below */
-  src: url(Nunito-VariableFont_wght.ttf);
-}
-
 html {
   font-family: Nunito, sans-serif;
 }
