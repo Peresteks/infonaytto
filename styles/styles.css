@@ -7,9 +7,20 @@ body {
       align-items: center;
       background: #000;
       color: #fff;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Nunito", sans-serif;
       text-align: center;
     }
+
+    @font-face {
+  font-family: "Nunito";
+  font-style: NORMAL; /* See note below */
+  font-weight: 200 900; /* See note below */
+  src: url(C:/prototyyppisivusto/styles/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+html {
+  font-family: Nunito, sans-serif;
+}
 
     .weekday {
       font-size: 4rem;

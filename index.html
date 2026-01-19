@@ -10,6 +10,35 @@
 
   <body>
 
+    <div class="weekday" id="weekday"></div>
+  <div class="date" id="date"></div>
+  <div class="time" id="time"></div>
+
+    <script>
+        function updateClock() {
+      const now = new Date();
+
+      const weekday = now.toLocaleDateString('fi-FI', { weekday: 'long' });
+      const date = now.toLocaleDateString('fi-FI', {
+        day: 'numeric',
+        month: 'long'
+      });
+
+      const time = now.toLocaleTimeString('fi-FI', {
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+
+      document.getElementById('weekday').textContent =
+        weekday.charAt(0).toUpperCase() + weekday.slice(1);
+
+      document.getElementById('date').textContent = date;
+      document.getElementById('time').textContent = time;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+    </script>
 
   </body>
 </html>
