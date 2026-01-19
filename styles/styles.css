@@ -15,7 +15,7 @@ body {
   font-family: "Nunito";
   font-style: NORMAL; /* See note below */
   font-weight: 200 900; /* See note below */
-  src: url(C:/prototyyppisivusto/styles/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+  src: url(Nunito-VariableFont_wght.ttf);
 }
 
 html {
@@ -36,7 +36,7 @@ html {
 }
 
     .weekday {
-      font-size: 6rem;
+      font-size: 1rem;
       font-weight: bold;
     }
 
